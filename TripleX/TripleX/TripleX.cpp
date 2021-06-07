@@ -1,20 +1,27 @@
-// TripleX.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // Print welcome messages to the terminal
+    std::cout << "You are a secret agent breaking into a secure server room...";
+    std::cout << std::endl;
+    std::cout << "Enter the correct code to continue..." << std::endl;
+
+    const int CodeA = 4;
+    const int CodeB = 3;
+    const int CodeC = 2;
+
+    const int CodeSum = CodeA + CodeB + CodeC;
+    const int CodeProduct = CodeA * CodeB * CodeC;
+
+
+    // Print CodeSum and CodeProduct to the terminal
+    std::cout << std::endl;
+    std::cout << "+ There are 3 numbers in the code" << std::endl;
+    std::cout << "+ The codes add-up to: " << CodeSum << std::endl;
+    std::cout << "+ The codes multiply to give: " << CodeProduct << std::endl;
+
+    int PlayerGuess;
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
